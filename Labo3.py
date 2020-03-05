@@ -36,7 +36,7 @@ print(call3(compute,2,9,op = sub))
 print(call3(compute,2,9,op = div))
 print(call3(compute,2,9,op = mult))
 #Question 4 :
-    #C'est le meme code que pour la question 4 mais n = 1
+    #C'est le meme code que pour la question 5 mais n = 1
 #Question 5 :
 print ("Question5 : ")
 import time
@@ -50,7 +50,7 @@ def sleep(n):
         return wrapper
     return decorator
 
-@sleep(1)           
+@sleep(5)           
 def printnum(i):    # on defini f = printnum
     print (i)
 
