@@ -35,3 +35,24 @@ print(call3(compute,2,9))
 print(call3(compute,2,9,op = sub))
 print(call3(compute,2,9,op = div))
 print(call3(compute,2,9,op = mult))
+
+#Question 4 :
+
+import time
+def sleep(n):
+    def decorator(f):
+        def wrapper(*args):
+            time.sleep(n)
+            result = f(*args)
+            return result
+        return wrapper
+    return decorator
+@sleep(5)
+def printnum(i):
+    print (i)
+
+cnt = 3
+while cnt > 0:
+    printnum (cnt)
+    cnt -= 1
+print ("KA-BOOM!")
